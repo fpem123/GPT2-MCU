@@ -31,8 +31,8 @@ paths:
 
           Request body example
 
-              name: TONY STARK
-              text: Today, we
+              name: T'CHALLA
+              text: Wakanda forever
               length: 150
 
         content:
