@@ -34,7 +34,7 @@ Model download: [Google drive](https://drive.google.com/file/d/1-NJbMK7BbO-2sVHD
 
 ## * With CLI *
 
-   curl -X POST "https://master-gpt2-mcu-fpem123.endpoint.ainize.ai/mcu" -H "accept: application/json" -H "Content-Type: multipart/form-data" -F "name=TONY STARK" -F "text=Today, we" -F "length=150"
+    curl -X POST "https://master-gpt2-mcu-fpem123.endpoint.ainize.ai/mcu" -H "accept: application/json" -H "Content-Type: multipart/form-data" -F "name=TONY STARK" -F "text=Today, we" -F "length=150"
 
 ## * With swagger *
 
