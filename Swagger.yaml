@@ -14,12 +14,12 @@ info:
       * And then, Fill number in length. Text is created as long as "length". I recommend between 100 and 300.
       * If length is so big, generate time will be long.
     ---
-    And you can use this in [demo page]().
+    And you can use this in [demo page](https://master-gpt2-mcu-fpem123.endpoint.ainize.ai/).
 
     Fine tuning data reference >> [Marvel Cinematic Universe Dialogue](https://www.kaggle.com/pdunton/marvel-cinematic-universe-dialogue)
 
 servers:
-  - url:
+  - url: https://master-gpt2-mcu-fpem123.endpoint.ainize.ai/
 
 paths:
   /mcu:
@@ -31,8 +31,8 @@ paths:
 
           Request body example
 
-              name:
-              text:
+              name: TONY STARK
+              text: Today, we
               length: 150
 
         content:
@@ -42,7 +42,8 @@ paths:
               properties:
                 name:
                   type: string
-                  enum: []
+                  enum: [TONY STARK, STEVE ROGERS, THOR, T'CHALLA, BRUCE BANNER, NATASHA ROMANOFF,
+                         WANDA MAXIMOFF, CLINT BARTON, JAMES RHODES, SAM WILSON, VISION, SCOTT LANG, PETER PARKER]
                   description: "MCU character name."
                 text:
                   type: string

@@ -6,7 +6,7 @@ This project generate MCU script using GPT-2 model.
 
 Fine tuning data: [Kaggle](https://www.kaggle.com/pdunton/marvel-cinematic-universe-dialogue)
 
-Model download: [Google drive]()
+Model download: [Google drive](https://drive.google.com/file/d/1-NJbMK7BbO-2sVHDUPTSyJTQ98xJtbtm/view?usp=sharing)
 
 ### Model information
 
@@ -34,7 +34,7 @@ Model download: [Google drive]()
 
 ## * With CLI *
 
-   
+   curl -X POST "https://master-gpt2-mcu-fpem123.endpoint.ainize.ai/mcu" -H "accept: application/json" -H "Content-Type: multipart/form-data" -F "name=TONY STARK" -F "text=Today, we" -F "length=150"
 
 ## * With swagger *
 
