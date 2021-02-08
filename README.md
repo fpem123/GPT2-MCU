@@ -11,9 +11,9 @@ Model download: [Google drive](https://drive.google.com/file/d/1-NJbMK7BbO-2sVHD
 ### Model information
 
     Base model: gpt-2 large
-    Epoch: 50
-    Train runtime: 11328.2175 secs
-    Loss: 0.0217
+    Epoch: 30
+    Train runtime: 2025.88 secs
+    Loss: 0.0221
 
 ### How to use
 
