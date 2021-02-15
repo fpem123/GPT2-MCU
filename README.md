@@ -26,7 +26,13 @@ Model download: [Google drive](https://drive.google.com/file/d/1-NJbMK7BbO-2sVHD
 
     name: The MCU character name.
     text: The base of script.
-    length: The size of generated text.
+    length: The size of generated text. (min: 50)
+
+
+### Output foramt
+
+    {"0": [[character name, dialog], [character name, dialog], ...]}
+    
 
 ### Image reference
 
@@ -34,7 +40,30 @@ Model download: [Google drive](https://drive.google.com/file/d/1-NJbMK7BbO-2sVHD
 
 ## * With CLI *
 
-    curl -X POST "https://master-gpt2-mcu-fpem123.endpoint.ainize.ai/mcu" -H "accept: application/json" -H "Content-Type: multipart/form-data" -F "name=TONY STARK" -F "text=Today, we" -F "length=150"
+### Input example
+
+    curl -X POST "https://master-gpt2-mcu-fpem123.endpoint.ainize.ai/mcu" -H "accept: application/json" -H "Content-Type: multipart/form-data" -F "name=TONY STARK" -F "text=Today, we" -F "length=100"
+
+
+### Output example
+
+    {
+      "0": [
+        [
+          "TONY STARK",
+          " Today, we're gonna talk about humility. But I'm sure if you were to wrap this up, you'd say, “I know I didn't do that.”"
+        ],
+        [
+          "HELMUT ZEMO",
+          " That you did."
+        ],
+        [
+          "TONY STARK",
+          " I know. I’m a bit of a diva. I can’t control the stuff that happens around me, but I can control how I react to it. And that’s where you come in."
+        ]
+      ]
+    }
+
 
 ## * With swagger *
 
